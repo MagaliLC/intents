@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Intents_Exercise</string>
+    <string name="writeHint">Escribe aquí</string>
+    <string name="open">Abrir</string>
+</resources>
