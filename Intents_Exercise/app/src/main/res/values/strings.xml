@@ -2,4 +2,9 @@
     <string name="app_name">Intents_Exercise</string>
     <string name="writeHint">Escribe aquí</string>
     <string name="open">Abrir</string>
+    <string name="share">Compartir</string>
+    <string name="email">Enviar e-mail</string>
+    <string name="web">Abrir web</string>
+    <string name="maps">Abrir maps</string>
+
 </resources>
