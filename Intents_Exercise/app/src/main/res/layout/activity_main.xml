@@ -9,8 +9,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/happyface"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            />
 
         <EditText
             android:id="@+id/write"
@@ -35,7 +42,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@color/green"
+            android:textColor="@color/white"
+            android:background="@color/pink"
             android:onClick="buttonOpenPressed"
             android:text="@string/open" />
 
@@ -51,9 +59,10 @@
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
-                android:background="@color/green"
+                android:background="@color/pink"
                 android:onClick="buttonSharePressed"
-                android:text="@string/share" />
+                android:text="@string/share"
+                android:textColor="@color/white" />
 
             <Button
                 android:layout_width="0dp"
@@ -61,7 +70,8 @@
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
-                android:background="@color/green"
+                android:background="@color/pink"
+                android:textColor="@color/white"
                 android:onClick="buttonEmailPressed"
                 android:text="@string/email" />
         </LinearLayout>
@@ -78,7 +88,8 @@
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
-                android:background="@color/green"
+                android:background="@color/pink"
+                android:textColor="@color/white"
                 android:onClick="buttonWebPressed"
                 android:text="@string/web" />
 
@@ -88,7 +99,8 @@
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
-                android:background="@color/green"
+                android:background="@color/pink"
+                android:textColor="@color/white"
                 android:onClick="buttonMapsPressed"
                 android:text="@string/maps" />
         </LinearLayout>
