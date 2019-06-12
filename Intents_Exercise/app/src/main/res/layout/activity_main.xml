@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/happyface"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            />
+            android:src="@drawable/happyface" />
 
         <EditText
             android:id="@+id/write"
@@ -34,18 +39,33 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:hint="@string/writeHint"
-            android:inputType="number"
-            />
-
+            android:inputType="number" />
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
         <Button
-            android:layout_width="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:textColor="@color/white"
+            android:layout_margin="20dp"
             android:background="@color/pink"
             android:onClick="buttonOpenPressed"
-            android:text="@string/open" />
+            android:text="@string/open"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/pink"
+            android:onClick="buttonSavePressed"
+            android:text="@string/save"
+            android:textColor="@color/white" />
+    </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -71,9 +91,9 @@
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:background="@color/pink"
-                android:textColor="@color/white"
                 android:onClick="buttonEmailPressed"
-                android:text="@string/email" />
+                android:text="@string/email"
+                android:textColor="@color/white" />
         </LinearLayout>
 
         <LinearLayout
@@ -89,9 +109,9 @@
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:background="@color/pink"
-                android:textColor="@color/white"
                 android:onClick="buttonWebPressed"
-                android:text="@string/web" />
+                android:text="@string/web"
+                android:textColor="@color/white" />
 
             <Button
                 android:layout_width="0dp"
@@ -100,12 +120,23 @@
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:background="@color/pink"
-                android:textColor="@color/white"
                 android:onClick="buttonMapsPressed"
-                android:text="@string/maps" />
+                android:text="@string/maps"
+                android:textColor="@color/white" />
+
         </LinearLayout>
 
-    </LinearLayout>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/pink"
+            android:onClick="buttonTimesPressed"
+            android:text="@string/times"
+            android:textColor="@color/white" />
 
+    </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

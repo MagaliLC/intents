@@ -6,5 +6,9 @@
     <string name="email">Enviar e-mail</string>
     <string name="web">Abrir web</string>
     <string name="maps">Abrir maps</string>
+    <string name="save">Guardar cambios</string>
+    <string name="times">Ver veces</string>
+    <string name="timesCounter">Has entrado</string>
+    <string name="timesCounter2">veces</string>
 
 </resources>
